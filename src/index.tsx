@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+// const element = <h1>HelloWorld</h1>
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+  // element
+  ,
   document.getElementById('root')
 );
 

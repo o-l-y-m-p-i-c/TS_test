@@ -1,0 +1,20 @@
+.auth{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9F003D;
+    overflow: hidden;
+    &__form{
+        min-width:800px;
+        padding: 20px;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 56px;
+        // img{
+
+        // }
+    }
+}
