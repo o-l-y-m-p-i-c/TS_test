@@ -1,14 +1,14 @@
 import React from 'react'
-import style from './authInput.modules.scss'
+import style from "./authInput.module.scss"
 
-interface IProps {
+interface IInput {
     data: string
 }
 
-class AuthInput extends React.PureComponent<IProps> {
-    constructor(props:IProps){
-        super(props);
-        this.state={}
+class AuthInput extends React.PureComponent <IInput> {
+   
+    text = (event:any)=>{
+        console.log(event.target.value)
     }
 
     render(){
@@ -17,7 +17,7 @@ class AuthInput extends React.PureComponent<IProps> {
         return(
             <>
                 <div className={style.auth__login} >
-                    <input className={style.inputText} type="text" autoComplete="off" required />
+                    <input className={style.inputText} onInput={this.text} type="text" autoComplete="off" required />
                     <article className={style.inputText__label}>
                         <span className={style.inputText__span}>
                             {data}

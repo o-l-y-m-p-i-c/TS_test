@@ -11,5 +11,5 @@ class Auth extends React.PureComponent {
         )
     }
 }
-
+    
 export default Auth

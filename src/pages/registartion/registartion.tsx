@@ -1,5 +1,6 @@
 import React from 'react'
-import style from './registartion.modules.scss'
+import Registrtion from '../../containers/reg/reg'
+import style from './registartion.module.scss'
 
 
 class Reg extends React.PureComponent {

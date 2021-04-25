@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link} from 'react-router-dom';
 import Main from '../../../pages/main/main'
+import style from './btn.module.scss'
 
 interface IBtn {
     naming: string,
-    color?: string
+    link:string
 }
 
 class Btn extends React.Component<IBtn> {
@@ -14,14 +15,12 @@ class Btn extends React.Component<IBtn> {
     }
 
     render(){
-        const {naming} = this.props;
+        const {naming, link} = this.props;
 
         return(
-            <>
-            <Link  to="/main" >
-                <button type="button"  className="btn --white" >{naming}</button>
+            <Link  to={link} className={style.border}>
+                <button type="button"  className={style.btn} >{naming}</button>
             </Link>
-            </>
         )
     }
 }

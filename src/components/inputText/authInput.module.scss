@@ -1,15 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-:root {
-    --main-bg-red:#9F003D;
-    --main-bg-blue:#002060;
-    --main-white: #ffff;
-    --main-black: #3333;
-    --main-gray: #F0EBEB;
-}
-*{
-    margin: 0;
-    padding: 0;
-}
+
 // body{
 //     background: var(--main-bg-blue);
 //     font-family: 'Roboto', sans-serif;
@@ -23,7 +12,7 @@
     align-items: center;
 }
 .auth{
-    min-width: 360px;
+    width: 300px;
     // padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -77,6 +66,7 @@
     transition: all 0.1s ease;
 }
 .inputText__span{
+    padding-bottom:20px ;
     font-weight: 600;
     font-size: 15px;
     position: absolute;

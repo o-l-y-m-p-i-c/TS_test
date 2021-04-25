@@ -1,13 +1,13 @@
 import React from 'react'
-import style from './btns.modules.scss'
 import Btn from './btn/btn'
+import style from './btns.module.scss'
 
 class Btns extends React.PureComponent{
     render(){
         return(
-            <div className="auth-btns">
-                <Btn naming="Регистрация" />
-                <Btn naming="Авторизация" />
+            <div className={style.auth__btns}>
+                <Btn naming="Регистрация" link="/reg"/>
+                <Btn naming="Авторизация" link="/main" />
             </div>
         )
     }

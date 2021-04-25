@@ -1,0 +1,22 @@
+.btn{
+    padding:15px 50px ;
+    border:none;
+    background: none;
+    font-size: 18px;
+    text-decoration: none;
+    color: white
+}
+.border{
+    border:1px solid var(--main-white);
+    color:var(--main-white);
+    display: flex;
+    align-items: center;
+}
+.--btn-bg{
+    background:#475c86 ;
+}
+.btn:hover{
+    background:#404144 ;
+    transition: all 0.2s ease;
+    cursor: pointer;text-decoration: none;
+}

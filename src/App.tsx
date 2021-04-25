@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import Auth from "./pages/auth/auth"
 import Main from "./pages/main/main"
+import Reg from "./pages/registartion/registartion"
 import './App.css';
 // import ClassComponent from "./classComponent"
 
@@ -11,9 +12,8 @@ function App() {
       <Switch>
         <Route path="/auth" component={Auth} />
         <Route path="/main" component={Main} />
+        <Route path="/reg" component={Reg} />
       </Switch>
-      {/* <CslassComponent data="Это я, пропс" age={42} comment="Какой-то комментарий"  /> */}
-      {/* <ClassComponent data="Это я, второй пропс" age={22} comment="Какой-то второй комментарий"  /> */}
     </>
   );
 }
