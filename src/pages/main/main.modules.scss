@@ -1,53 +1,19 @@
-.menu{
-    background: #FBF5F7;
-    width: 80px ;  
-}
-.menu li{
-    list-style: none;
-    
-}
-.menu li a{
-    position: relative;
-    display: flex;
-    align-items:center;
-    font-size:24px;
-    z-index: 2;
-}
-.menu li a img{
-    position: relative;
-    padding: 20px;
-    z-index: 3;
-}
-.menu li a article{
-    position: absolute;
-    left: -300px;
-    padding: 20px;
-    padding-left: 50px;
-    transition: all 0.3s ease;
-    background: var(--main-bg-red);
-    color: var(--main-white);
-    z-index: 1;
-    white-space: nowrap;
-}
-.menu li a:hover article
-{
-    padding-left: 50px;
-    left: 80px;
-    /* white-space: nowrap; */
-}
-.menu ul:hover + li a article,
-.menu ul a article:hover + img
-{
-    left: 80px;
-    /* white-space: nowrap; */
-}
-.menu li a img:hover{
-    background: var(--main-bg-red);
-}
 .content{
-    display: grid;
-    grid-template-columns: auto 1fr;
+    box-sizing: border-box;
+    // padding: 0  20px;
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    min-height: calc(100vh - 94px);
 }
+
+
+// 
+
+// 
+
 .lesson-section-wrapper{
     padding: 25px;
 }
@@ -95,4 +61,8 @@
     padding: 10px 0;
     border: 1px solid var(--main-gray);
     background: #FAF2F5;
+}
+.right-side{
+    width: 100%;
+    background: white;
 }

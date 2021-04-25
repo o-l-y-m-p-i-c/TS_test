@@ -1,0 +1,39 @@
+// *{
+//     background: #9F003D;
+// }
+body{
+    background: #9F003D;
+}
+.header__wrapper{
+    width: 100%;
+}
+.header{
+    position: relative;
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #7e7c7c;
+    &__goOut{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        
+            a{
+                text-decoration: none;
+            }
+            span{
+                text-transform: uppercase;
+                color: #7e7c7c;
+            }
+            
+        
+    }
+    &__goOut:hover{
+        color: white;
+        span{
+            color: white;
+        }
+    }
+}
